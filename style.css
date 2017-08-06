@@ -1,0 +1,60 @@
+p, body {
+    line-height: 1.35em;
+}
+
+@media not print {
+    a:link, a:hover {
+        color: black;
+    }
+
+    a:visited {
+        color: grey;
+    }
+
+    a:active {
+        color: lightgrey;
+    }
+
+    ul, ol {
+        margin-top: 0;
+    }
+
+    h2 {
+        margin: 35px 0 5px 0;
+    }
+}
+
+@media not print and (min-width: 1020px) {
+    .intro {
+        float: left;
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 21pt;
+    }
+
+    .main-content {
+        float: left;
+        max-width: 850px;
+        padding-bottom: 3.5cm;
+    }
+}
+
+@media only print {
+    .intro {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .toc {
+        display: none;
+    }
+
+    a {
+        color: black;
+    }
+}
