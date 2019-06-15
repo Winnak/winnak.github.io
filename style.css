@@ -24,7 +24,7 @@ p, body {
     }
 }
 
-@media not print and (min-width: 1020px) {
+@media not print {
     .intro {
         float: left;
         width: 300px;
@@ -40,7 +40,6 @@ p, body {
         padding-bottom: 3.5cm;
     }
 }
-
 @media only print {
     .intro {
         width: 100%;
@@ -57,4 +56,34 @@ p, body {
     a {
         color: black;
     }
+
+    .hide-print {
+        display: none
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    body {
+        width: 100%;
+    }
+
+    .intro {
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .main-content {
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+/* 
+    .toc {
+        display: none;
+    } */
 }
